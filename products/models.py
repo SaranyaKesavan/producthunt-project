@@ -14,12 +14,12 @@ class Products(models.Model):
 
 
     def pub_date_pretty(self):
-        return self.published_date.strftime("%b %e %Y")
+        return self.published_date.strftime("%b %e, %Y")
 
     def __str__(self):
         return self.title
     
     def summary(self):
-        return self.body[:100]
+        return self.body[:350]
 
    
